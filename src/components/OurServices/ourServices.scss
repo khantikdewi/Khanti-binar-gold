@@ -1,0 +1,47 @@
+@import "../../global.scss";
+
+.ourServices{
+    background-color: white;
+    display: flex;
+
+    .services-left{
+        flex: 0.5;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .services-right{
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .services-right-cont{
+            width: 100%;
+            overflow: hidden;
+
+            .services-title, .services-paragraf{
+                margin-left: 50px;
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
+
+            .service-list{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .list-item{
+                    display: flex;
+
+                    .icon-item{
+                        margin: 0 1rem 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
