@@ -1,5 +1,106 @@
 @import "../../global.scss";
 
-.testimonials{
-    background-color: $primaryColor;
+.testimonials {
+  background-color: $primaryColor;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .testi-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .testi-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 10px;
+  }
+
+  .slider {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+  }
+
+  .testi-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    // padding: 50px;
+
+    .testi-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      background-color: $secondaryColor;
+      width: 500px;
+      border-radius: 10px;
+      padding: 50px 25px 50px 25px;
+      margin: 20px;
+
+      .left {
+        width: 30%;
+      }
+      .right {
+        width: 100%;
+
+        .top {
+          color: #f9cc00;
+        }
+
+        .testi-para {
+          font-weight: 500;
+        }
+
+        .bottom {
+          padding-top: 10px;
+          .testi-address {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .testi-arrow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .arrow {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      border-radius: 50%;
+      border: 1px solid #c4c4c4;
+      margin: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #5cb85f;
+      }
+
+      @include mobile {
+        display: none;
+      }
+
+      &.left {
+        left: 50px;
+      }
+
+      &.right {
+        right: 50px;
+        transform: rotateY(180deg);
+      }
+    }
+  }
 }
