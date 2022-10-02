@@ -1,59 +1,59 @@
 @import "../../global.scss";
 
-.whyUs{
-    background-color: $primaryColor;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+.whyUs {
+  background-color: $primaryColor;
+  height: $height;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 
-    h2{
-        font-size: 30px;
-        margin: 30px;
-    }
-    .whyUs-desc{
-        font-size: 20px;
-        margin-left: 30px;
-    }
+  h2 {
+    font-size: 30px;
+    margin: 30px;
+  }
+  .whyUs-desc {
+    font-size: 20px;
+    margin-left: 30px;
+  }
 
-    .card{
-        width: 100%;
-        height: 80%;
+  .card {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .list {
+      width: 270px;
+      height: 50%;
+      border-radius: 5%;
+      border: 1px solid #d0d0d0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+      margin: 20px;
+
+      .list-item {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
 
-        .list{
-            width: 270px;
-            height: 50%;
-            border-radius: 5%;
-            border: 1px solid #D0D0D0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 10px;
-            margin: 20px;
-
-            .list-item{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-
-                img{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                }
-                h3{
-                    font-size: 20px;
-                    padding: 10px 0 10px 0;
-                }
-                p{
-                    font-size: 15px;
-                    text-align: center;
-                }
-            }
+        img {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
         }
+        h3 {
+          font-size: 20px;
+          padding: 10px 0 10px 0;
+        }
+        p {
+          font-size: 15px;
+          text-align: center;
+        }
+      }
     }
-
+  }
 }

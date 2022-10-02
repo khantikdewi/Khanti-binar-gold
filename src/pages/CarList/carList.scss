@@ -1,0 +1,9 @@
+@import "../../global.scss";
+
+.car-list {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

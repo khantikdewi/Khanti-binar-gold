@@ -1,52 +1,52 @@
 @import "../../global.scss";
 
-.footer-container{
-    background-color: $primaryColor;
+.footer-container {
+  background-color: $primaryColor;
+  display: flex;
+  position: static;
+  flex-direction: column;
+  justify-content: flex-end;
+  // gap: 3;
+
+  .footer-wrapper {
+    // border-top: 1px solid rgb(131, 127, 127);
     display: flex;
-    position:static;
-    flex-direction: column;
-    justify-content: flex-end;
-    // gap: 3;
-    
-    .footer-wrapper{
-        border-top: 1px solid rgb(131, 127, 127);
-        display: flex;
-        align-items: center;
-        width: 100vw;
+    align-items: center;
+    width: 100vw;
 
-        
-        .footer-one{
-            flex: 0.25;
-            h3, p{
-                margin: 20px;
-            }
-        }
-        .footer-two{
-            flex: 0.25;
-            
-            .menu{
-                text-decoration: none;
-                color: inherit;
-                display: flex;
-                justify-content: center;
-                margin: 15px;
-                font-size: 20px;
-                font-weight: 500;
-            }
-        }
-        .footer-three{
-            flex: 0.25;
-
-            .footer-icon{
-                margin: 10px;
-            }
-        }
-        .footer-four{
-            flex: 0.25;
-
-            h1{
-                color: $tertiraryColor;
-            }
-        }
+    .footer-one {
+      flex: 0.25;
+      h3,
+      p {
+        margin: 20px;
+      }
     }
+    .footer-two {
+      flex: 0.25;
+
+      .menu {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .footer-three {
+      flex: 0.25;
+
+      .footer-icon {
+        margin: 10px;
+      }
+    }
+    .footer-four {
+      flex: 0.25;
+
+      h1 {
+        color: $tertiraryColor;
+      }
+    }
+  }
 }

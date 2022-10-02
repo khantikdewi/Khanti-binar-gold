@@ -1,14 +1,15 @@
-$primaryColor: #FFFFFF;
-$secondaryColor: #F1F3FF;
-$tertiraryColor: #0D28A6;
+$primaryColor: #ffffff;
+$secondaryColor: #f1f3ff;
+$tertiraryColor: #0d28a6;
 $width: 768px;
+$height: 100vh;
 
-.app{
-    height: 100vh;
+.app {
+  height: 100vh;
 }
 
-@mixin mobile{
-    @media (max-width: #{$width}){
-        @content
-    }
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
 }

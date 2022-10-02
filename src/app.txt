@@ -1,0 +1,11 @@
+<BrowserRouter>
+      <Routes>
+        <div className="app" id="app">
+          <Topbar />
+          <Route path="/" element={<Home />} />
+          <Route path="/car-list" element={<CarList />} />
+          <Route path="/car-list/:id" element={<CarDetail />} />
+          {/*<Route path="*" element={<NotFound />} /> */}
+        </div>
+      </Routes>
+    </BrowserRouter>

@@ -1,35 +1,36 @@
 @import "../../global.scss";
 
-.faqSection{
-    background-color: $primaryColor;
+.faqSection {
+  background-color: $primaryColor;
+  display: flex;
+  justify-content: center;
+  padding: 0 200px 0 200px;
+  height: $height;
+
+  .faq-container {
     display: flex;
+    // flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 0 200px 0 200px;
 
-    .faq-container{
-        display: flex;
-        // flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .faq-left {
+      flex: 0.5;
+      display: flex;
+      flex-direction: column;
+      gap: 3;
 
-        .faq-left{
-            flex: 0.5;
-            display: flex;
-            flex-direction: column;
-            gap: 3;
-
-            h1{
-                margin-bottom: 30px;
-                font-size: 40px;
-            }
-            p{
-                // margin: 20px;
-                font-size: 18px;
-            }
-        }
-        .faq-right{
-            flex: 0.5;
-            margin: 20px;
-        }
+      h1 {
+        margin-bottom: 30px;
+        font-size: 40px;
+      }
+      p {
+        // margin: 20px;
+        font-size: 18px;
+      }
     }
+    .faq-right {
+      flex: 0.5;
+      margin: 20px;
+    }
+  }
 }
