@@ -1,9 +1,6 @@
 import { useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { Rating } from "@mui/material";
 import arrow from "../../assets/fi_chevron-left.svg";
-// import Slider from "react-slick";
 import { dataTestimoni } from "../../data";
 import "./testimonials.scss";
 
@@ -18,8 +15,8 @@ const Testimonials = () => {
     <div className="testimonials" id="testimonials">
       <h1 className="testi-title">Testimonials</h1>
       <h3 className="testi-desc">Berbagai review positif dari para pelanggan kami</h3>
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * 50}vw)` }}>
-        <div className="testi-wrapper">
+      <div className="slider">
+        <div className="testi-wrapper" style={{ transform: `translateX(-${currentSlide * 50}vw)` }}>
           {dataTestimoni.map((d) => (
             <div className="testi-card">
               <div className="left">
