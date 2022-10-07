@@ -1,9 +1,13 @@
 import "./topbar.scss";
 import { Link } from "react-router-dom";
+import { LinkData } from "../../data";
+import { useState } from "react";
 
 const Topbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="topbar">
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="topbar-wrapper">
         <div className="topbar-left">
           <Link to="/">
@@ -11,25 +15,19 @@ const Topbar = () => {
           </Link>
         </div>
         <div className="topbar-right">
-          <div className="item-container">
-            <a className="topbar-menu" href="#ourServices">
-              Our Services
-            </a>
-          </div>
-          <div className="item-container">
-            <a className="topbar-menu" href="#whyUS">
-              Why Us
-            </a>
-          </div>
-          <div className="item-container">
-            <a className="topbar-menu" href="#testimonials">
-              Testimonials
-            </a>
-          </div>
-          <div className="item-container">
-            <a className="topbar-menu" href="#faqSection">
-              FAQ
-            </a>
+          {LinkData.map((d) => (
+            <ul className="item-container">
+              <li>
+                <a className="topbar-menu" href={d.href}>
+                  {d.label}
+                </a>
+              </li>
+            </ul>
+          ))}
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
           </div>
         </div>
       </div>

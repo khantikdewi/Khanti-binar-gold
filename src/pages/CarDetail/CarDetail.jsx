@@ -196,11 +196,11 @@ const CarDetail = () => {
               </ListContainer>
             </DetailDesc>
             <DetailHarga>
-              <img src={car.image} style={{ width: "80%", height: "auto" }} />
+              <img src={car.image} alt="img" style={{ width: "80%", height: "auto" }} />
               <div>
                 <h2>{car.name}</h2>
                 <div style={{ display: "flex", gap: "8px" }}>
-                  <img src={userImg} />
+                  <img alt="img" src={userImg} />
                   <p>{car.category}</p>
                 </div>
               </div>

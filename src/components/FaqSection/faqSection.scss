@@ -6,31 +6,51 @@
   justify-content: center;
   padding: 0 200px 0 200px;
   height: $height;
+  @include mobile {
+    padding: 0;
+  }
 
   .faq-container {
     display: flex;
     // flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .faq-left {
       flex: 0.5;
       display: flex;
       flex-direction: column;
       gap: 3;
-
+      // @include mobile {
+      //   align-items: flex-start;
+      // }
       h1 {
         margin-bottom: 30px;
         font-size: 40px;
+        @include mobile {
+          text-align: center;
+        }
       }
       p {
         // margin: 20px;
         font-size: 18px;
+        @include mobile {
+          text-align: center;
+          // flex-wrap: wrap;
+          margin: 10px 100px;
+        }
       }
     }
     .faq-right {
       flex: 0.5;
       margin: 20px;
+      @include mobile {
+        flex-direction: column;
+      }
     }
   }
 }

@@ -1,13 +1,12 @@
+import { useState } from "react";
 import Topbar from "../../components/Topbar/Topbar";
 import Home from "../Home/Home";
-// import "../../global.scss";
-
-// import "../../global.scss";
 
 const HomePages = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
-      <Topbar />
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
     </div>
   );

@@ -26,6 +26,15 @@
       justify-content: center;
       flex-direction: column;
 
+      h2,
+      p {
+        @include mobile {
+          align-items: center;
+          text-align: center;
+          padding: 0 20px 0 20px;
+        }
+      }
+
       .banner-title {
         font-size: 35px;
         justify-content: flex-start;
