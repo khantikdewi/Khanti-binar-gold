@@ -33,8 +33,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    // padding: 50px;
+    // flex-direction: row;
+
+    @include mobile {
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+    }
 
     .testi-card {
       display: flex;
@@ -47,6 +52,10 @@
       border-radius: 10px;
       padding: 50px 25px 50px 25px;
       margin: 20px;
+
+      @include mobile {
+        overflow: hidden;
+      }
 
       .left {
         width: 30%;
@@ -75,7 +84,7 @@
   .testi-arrow-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 50vw;
 
     .arrow {
       width: 25px;

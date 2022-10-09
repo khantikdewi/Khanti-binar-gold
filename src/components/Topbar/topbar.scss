@@ -73,20 +73,20 @@
     }
   }
   &.active {
-    background-color: $tertiraryColor;
-    color: white;
+    background-color: $secondaryColor;
+    color: $tertiraryColor;
 
     .hamburger {
       span {
         &:first-child {
-          background-color: white;
+          background-color: $tertiraryColor;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: white;
+          background-color: $tertiraryColor;
           transform: rotate(-45deg);
         }
       }
